@@ -5,10 +5,40 @@
   <title></title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <form action="./">
+  <body>
+    <section id="background-container">
+      <div id="logo-container">
+	<img src="images/ADEN_BagNameplateBoxBWNoBkgrd.png" alt="Aden Footwear Logo in black/white" height="80px">
+	<p>Working to be your favorite shoe company!</p>
+      </div>
+    </section>
 
+    <main>
+      <header>
+	<p>We'd love to hear from you. Questions about our products, feedback on our service, compliments, insults, really anything you'd like to share :)</p>
+	
+	<p>Sign up below to create an account with us. You <em>know</em> you want to.</p>
+      </header>
+      <div id="form-container">
+	<h3>Let's do this!</h3>
+	<form action="./">
+	  <label for="first-name">First Name</label>
+	  <input id="first-name" type="text" name="first-name">
+	  <label for="last-name">Last Name</label>
+	  <input id="last-name" type="text" name="last-name">
+	  <label for="email">Email:</label>
+	  <input id="email" type="email" name="email">
+	  <label for="phone">Phone Number</label>
+	  <input id="phone" type="tel" name="phone">
+	  <label for="password1">Password</label>
+	  <input id="password1" type="password" name="password1">
+	  <label for="password2">Confirm Password</label>
+	  <input id="password2" type="password" name="password2">
 
-  </form>
-</body>
+	  <button type="submit">Create Account</button>
+	</form>
+      </div>
+      <p>Already have an account? <span id="sign-in">Sign In</span></p>
+    </main>
+  </body>
 </html>
