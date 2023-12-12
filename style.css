@@ -1,10 +1,17 @@
 @font-face {
-    font-family: 'bebas_neueregular';
-    src: url('./fonts/bebasneue-regular-webfont.woff2') format('woff2'),
-         url('./fonts/bebasneue-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'bebas_neueregular';
+  src: url('./fonts/bebasneue-regular-webfont.woff2') format('woff2'),
+  url('./fonts/bebasneue-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 
+@font-face {
+  font-family: 'afacadregular';
+  src: url('afacad-variablefont_wght-webfont.woff2') format('woff2'),
+  url('afacad-variablefont_wght-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
 * {
@@ -22,25 +29,7 @@ body {
   margin: 0;
 }
 
-div#logo-container {
-  background-color: rgb(0 0 0 / 50%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 5%;
-  width: 100%;
-  margin-top: 25%;
-}
-
-div#logo-container p {
-  font-family: bebas_neueregular, sans-serif;
-  font-size: 24px;
-  /* letter-spacing: .03em; */
-  color: #fff;
-  width: 40%;
-}
-
-section#background-container {
+section.background-container {
   background-color: aliceblue;
   background-image: url('images/background.jpg');
   background-position: center;
@@ -52,29 +41,68 @@ section#background-container {
   padding: none;
 }
 
+div.logo-container {
+  background-color: rgb(0 0 0 / 50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  width: 100%;
+  margin-top: 25%;
+}
+
+div.logo-container p {
+  font-family: bebas_neueregular, sans-serif;
+  font-size: 28px;
+  /* letter-spacing: .03em; */
+  color: #fff;
+  width: 45%;
+}
+
+
 main {
+  font-family: afacadregular, sans-serif;
   background-color: #fff;
   height: 100vh;
   width: 45vw;
 }
 
 main header {
+  font-family: inherit;
+  font-size: 18px;
   font-weight: bold;
   width: 70%;
-  padding-top: 5vh;
+  padding-top: 10vh;
   padding-bottom: 2vh;
   padding-left: 2vw;
 }
 
-div#form-container {
-  box-shadow: 5px 5px 5px grey;
+div.form-container {
+  box-shadow: 0px 2px 5px rgb(0 0 0 / 20%);
   padding-top: 1vh;
+  padding-bottom: 2vh;
   padding-left: 2vw;
 }
 
 
-div#form-container + p {
+div.form-container + p {
   
   padding-top: 1vh;
   padding-left: 2vw;
+}
+
+form label {
+  display: block;
+  font-family: bebas_neueregular, sans-serif;
+  color: rgb(0 0 0 / 60%);
+}
+
+form input {
+  border: 1px solid rgb(0 0 0 / 20%);
+  outline: none;
+}
+
+div.form-row {
+  display: flex;
+  gap: 10%;
 }
