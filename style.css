@@ -20,6 +20,8 @@
 
 :root {
   box-sizing: border-box;
+
+  --backdrop-color: #029ccf;
 }
 
 body {
@@ -30,7 +32,7 @@ body {
 }
 
 section.background-container {
-  background-color: aliceblue;
+  background-color: var(--backdrop-color);
   background-image: url('images/background.jpg');
   background-position: center;
   background-size: cover;
@@ -79,6 +81,7 @@ main header {
 
 div.form-container {
   box-shadow: 0px 2px 5px rgb(0 0 0 / 20%);
+
   padding-top: 1vh;
   padding-bottom: 2vh;
   padding-left: 2vw;
@@ -86,15 +89,22 @@ div.form-container {
 
 
 div.form-container + p {
-  
   padding-top: 1vh;
   padding-left: 2vw;
 }
 
-form label {
-  display: block;
+a {
+  color: var(--backdrop-color);
+}
+form {
   font-family: bebas_neueregular, sans-serif;
   color: rgb(0 0 0 / 60%);
+}
+
+form label {
+  display: block;
+  font-family: inherit;
+  color: inherit;
 }
 
 form input {
