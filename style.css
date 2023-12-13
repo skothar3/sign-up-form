@@ -1,15 +1,17 @@
 @font-face {
-  font-family: 'bebas_neueregular';
-  src: url('./fonts/bebasneue-regular-webfont.woff2') format('woff2'),
-  url('./fonts/bebasneue-regular-webfont.woff') format('woff');
+  font-family: "bebas_neueregular";
+  src:
+    url("./fonts/bebasneue-regular-webfont.woff2") format("woff2"),
+    url("./fonts/bebasneue-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'afacadregular';
-  src: url('afacad-variablefont_wght-webfont.woff2') format('woff2'),
-  url('afacad-variablefont_wght-webfont.woff') format('woff');
+  font-family: "afacadregular";
+  src:
+    url("afacad-variablefont_wght-webfont.woff2") format("woff2"),
+    url("afacad-variablefont_wght-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -33,7 +35,7 @@ body {
 
 section.background-container {
   background-color: var(--backdrop-color);
-  background-image: url('images/background.jpg');
+  background-image: url("images/background.jpg");
   background-position: center;
   background-size: cover;
 
@@ -61,7 +63,6 @@ div.logo-container p {
   width: 45%;
 }
 
-
 main {
   font-family: afacadregular, sans-serif;
   background-color: #fff;
@@ -87,7 +88,6 @@ div.form-container {
   padding-left: 2vw;
 }
 
-
 div.form-container + p {
   padding-top: 1vh;
   padding-left: 2vw;
@@ -96,6 +96,7 @@ div.form-container + p {
 a {
   color: var(--backdrop-color);
 }
+
 form {
   font-family: bebas_neueregular, sans-serif;
   color: rgb(0 0 0 / 60%);
