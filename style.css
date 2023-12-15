@@ -24,96 +24,145 @@
   box-sizing: border-box;
 
   --backdrop-color: #029ccf;
+  --error-color: #fd3f3f;
+  --hover-color: #f0b924;
+  --box-shadow-effect: 0px 2px 5px rgb(0 0 0 / 20%);
+
+  --content-padding-right: 10vw;
+  --content-padding-left: 3vw
 }
 
 body {
   display: flex;
   justify-content: center;
-  background-color: rgb(0 0 0);
+  background-color: #000;
+  height: 100vh;
+  width: 100vw;
   margin: 0;
 }
 
-section.background-container {
+section.background {
   background-color: var(--backdrop-color);
   background-image: url("images/background.jpg");
   background-position: center;
   background-size: cover;
 
-  height: 100vh;
-  width: 35vw;
+  height: 100%;
+  width: 30%;
   margin: none;
   padding: none;
 }
 
 div.logo-container {
-  background-color: rgb(0 0 0 / 50%);
+  background-color: rgb(0 0 0 / 40%);
   display: flex;
-  justify-content: center;
   align-items: center;
+  height: 14%;
   gap: 5%;
-  width: 100%;
-  margin-top: 25%;
+  padding: 0 2vw;
+  margin-top: 30vh;
 }
 
 div.logo-container p {
   font-family: bebas_neueregular, sans-serif;
-  font-size: 28px;
-  /* letter-spacing: .03em; */
+  font-size: 25px;
+  letter-spacing: 0.8px;
   color: #fff;
-  width: 45%;
+  margin: 0;
 }
 
 main {
-  font-family: afacadregular, sans-serif;
-  background-color: #fff;
-  height: 100vh;
-  width: 45vw;
+  background-color: #f7f7f7;
+  height: 100%;
+  width: 50%;
 }
 
 main header {
-  font-family: inherit;
+  font-family: afacadregular, sans-serif;
   font-size: 18px;
-  font-weight: bold;
-  width: 70%;
-  padding-top: 10vh;
-  padding-bottom: 2vh;
-  padding-left: 2vw;
+  font-weight: 580;
+  padding: 10vh var(--content-padding-right) 2vh var(--content-padding-left);
 }
 
-div.form-container {
-  box-shadow: 0px 2px 5px rgb(0 0 0 / 20%);
-
-  padding-top: 1vh;
-  padding-bottom: 2vh;
-  padding-left: 2vw;
-}
-
-div.form-container + p {
-  padding-top: 1vh;
-  padding-left: 2vw;
-}
-
-a {
-  color: var(--backdrop-color);
+section.form {
+  background-color: #fff;
+  color: rgb(0 0 0 / 60%);
+  box-shadow: var(--box-shadow-effect);
+  padding: 1vh var(--content-padding-right) 2vh var(--content-padding-left);
 }
 
 form {
   font-family: bebas_neueregular, sans-serif;
-  color: rgb(0 0 0 / 60%);
+}
+
+div.form-row-container {
+  display: flex;
+  gap: 5%;
+}
+
+p.form-input-container {
+  margin-top: 1vh;
+  flex-grow: 1;
 }
 
 form label {
   display: block;
   font-family: inherit;
+  font-size: 14px;
   color: inherit;
+  letter-spacing: 1px;
+  width: 80%;
 }
 
 form input {
   border: 1px solid rgb(0 0 0 / 20%);
+  border-radius: 2px;
   outline: none;
+  width: 80%;
 }
 
-div.form-row {
-  display: flex;
-  gap: 10%;
+form input.error {
+  outline: none;
+  border: 1px solid var(--error-color);
+}
+
+form input:focus {
+  outline: none;
+  border: 1px solid var(--backdrop-color);
+  box-shadow: var(--box-shadow-effect);
+}
+
+form input:hover {
+  border: 1px solid var(--hover-color);
+}
+
+section.submission p,
+section.submission button {
+  margin: 5vh var(--content-padding-right) 2vh var(--content-padding-left);
+}
+
+section.submission button.submit {
+  padding: 12px 35px;
+  background-color: var(--backdrop-color);
+  color: #fff;
+  font-weight: 550;
+  border: none;
+  border-radius: 8px;
+  box-shadow: var(--box-shadow-effect);
+  cursor: pointer;
+}
+
+section.submission button.submit:hover,
+section.submission button.submit:focus {
+  background: var(--hover-color);
+  box-shadow: 0px 2px 5px var(--backdrop-color);
+}
+
+section.submission a.sign-in {
+  color: var(--backdrop-color);
+  text-decoration: none;
+}
+
+section.submission a.sign-in:hover {
+  color: var(--hover-color);
 }
