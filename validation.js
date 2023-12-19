@@ -1,10 +1,3 @@
-const form = document.getElementById("sign-up-form");
+const form = document.querySelector("form");
 
-const form2 = document.querySelector("form");
-
-console.log(form);
-console.log(form2);
-
-
-
-
+console.log(form.elements);
