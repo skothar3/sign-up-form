@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <title>Sign-up Form</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="validation.js"></script>
   </head>
   <body>
     <section class="background">
@@ -31,33 +32,42 @@
       </header>
       <section class="form">
 	<h3>Let's do this!</h3>
-	<form id="sign-up-form" action="./">
+	<form id="sign-up-form" action="./" novalidate>
 	  <div class="form-row-container">
 	    <p class="form-input-container">
-	      <label for="first-name">First Name<span aria-label="required">*</span></label>
-	      <input
-		  id="first-name"
-		  type="text"
-		  name="first-name"
-		  minlength="2"
-		  required
-		  />
+	      <label for="first-name"
+		     >First Name<span aria-label="required">*</span></label
+		   >
+		   <input
+		       id="first-name"
+		       type="text"
+		       name="first-name"
+		       minlength="2"
+		       required
+		       />
+		   <span class="error" aria-live="polite"></span>
 	    </p>
 	    <p class="form-input-container">
-	      <label for="last-name">Last Name<span aria-label="required">*</span></label>
-	      <input
-		  id="last-name"
-		  type="text"
-		  name="last-name"
-		  minlength="2"
-		  required
-		  />
+	      <label for="last-name"
+		     >Last Name<span aria-label="required">*</span></label
+		   >
+		   <input
+		       id="last-name"
+		       type="text"
+		       name="last-name"
+		       minlength="2"
+		       required
+		       />
+		   <span class="error" aria-live="polite"></span>
 	    </p>
 	  </div>
 	  <div class="form-row-container">
 	    <p class="form-input-container">
-	      <label for="email">Email<span aria-label="required">*</span></label>
-	      <input id="email" type="email" name="email" required/>
+	      <label for="email"
+		     >Email<span aria-label="required">*</span></label
+		   >
+		   <input id="email" type="email" name="email" required />
+		   <span class="error" aria-live="polite"></span>
 	    </p>
 	    <p class="form-input-container">
 	      <label for="phone">Phone Number</label>
@@ -66,26 +76,32 @@
 	  </div>
 	  <div class="form-row-container">
 	    <p class="form-input-container">
-	      <label for="password">Password<span aria-label="required">*</span></label>
-	      <input
-		  id="password"
-		  class="error"
-		  type="password"
-		  name="password"
-		  minlength="8"
-		  maxlength="16"
-		  required
-		  />
+	      <label for="password"
+		     >Password<span aria-label="required">*</span></label
+		   >
+		   <input
+		       id="password"
+		       class="error"
+		       type="password"
+		       name="password"
+		       minlength="8"
+		       maxlength="16"
+		       required
+		       />
+		   <span class="error" aria-live="polite"></span>
 	    </p>
 	    <p class="form-input-container">
-	      <label for="password-confirm">Confirm Password<span aria-label="required">*</span></label>
-	      <input
-		  id="password-confirm"
-		  class="error"
-		  type="password"
-		  name="password-confirm"
-		  required
-		  />
+	      <label for="password-confirm"
+		     >Confirm Password<span aria-label="required">*</span></label
+		   >
+		   <input
+		       id="password-confirm"
+		       class="error"
+		       type="password"
+		       name="password-confirm"
+		       required
+		       />
+		   <span class="error" aria-live="polite"></span>
 	    </p>
 	  </div>
 	</form>
