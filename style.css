@@ -184,7 +184,7 @@ section.submission {
   padding: 4vh var(--main-padding-right) 2vh var(--main-padding-left);
 }
 
-section.submission button.submit {
+section.submission button {
   background-color: var(--backdrop-color);
   color: #fff;
   font-size: clamp(0.6rem, 0.9vw, 1.2rem);
@@ -198,8 +198,8 @@ section.submission button.submit {
   padding: clamp(0.6rem, 0.9vw, 1.2rem) clamp(1rem, 1.6vw, 1.4rem);
 }
 
-section.submission button.submit:hover,
-section.submission button.submit:focus {
+section.submission button:hover,
+section.submission button:focus {
   background: var(--hover-color);
   box-shadow: 0px 2px 5px var(--backdrop-color);
 }
@@ -209,11 +209,11 @@ section.submission p {
 
   margin-top: 3vh;
 }
-section.submission a.sign-in {
+section.submission a {
   color: var(--backdrop-color);
   text-decoration: none;
 }
 
-section.submission a.sign-in:hover {
+section.submission a:hover {
   color: var(--hover-color);
 }
