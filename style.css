@@ -163,7 +163,7 @@ section.sign-up form input {
   width: 80%;
 }
 
-section.sign-up form input.error {
+section.sign-up form input:invalid {
   outline: none;
   border: 0.08rem solid var(--error-color);
 }
