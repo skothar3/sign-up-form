@@ -83,7 +83,7 @@ section.background div.logo-container img {
 
 section.background div.logo-container p {
   font-family: bebas_neueregular, sans-serif;
-  font-size: clamp(0.75rem, 1.8vw, 2.2rem);
+  font-size: clamp(0.60rem, 1.8vw, 2.2rem);
   -webkit-text-stroke: 0.5px #000;
   letter-spacing: 0.8px;
   color: #fff;
@@ -101,7 +101,7 @@ main {
 }
 
 main header {
-  font-size: clamp(0.9rem, 1.4vw, 2rem);
+  font-size: clamp(0.7rem, 1.6vw, 2rem);
   font-weight: 680;
 
   height: var(--header-height);
@@ -116,11 +116,11 @@ section.sign-up {
 
   height: var(--form-height);
   width: 100%;
-  padding: 0.3vh var(--main-padding-right) 0.1vh var(--main-padding-left);
+  padding: 1vh var(--main-padding-right) 3vh var(--main-padding-left);
 }
 
 section.sign-up > p {
-  font-size: clamp(1rem, 1.5vw, 2rem);
+  font-size: clamp(0.9rem, 1.6vw, 2rem);
   font-weight: bold;
 }
 
@@ -134,7 +134,7 @@ section.sign-up div.form-row-container {
   display: flex;
   gap: 5%;
 
-  padding: 1vh 0vh;
+  padding: 1.2vh 0vh;
 }
 
 section.sign-up p.form-element-container {
@@ -148,7 +148,7 @@ section.sign-up form label {
   display: block;
 
   font-family: inherit;
-  font-size: 0.8rem;
+  font-size: clamp(0.7rem, 1.1vw, 1rem);
   color: inherit;
   letter-spacing: 0.05rem;
 
@@ -187,15 +187,15 @@ section.submission {
 section.submission button {
   background-color: var(--backdrop-color);
   color: #fff;
-  font-size: clamp(0.6rem, 0.9vw, 1.2rem);
-  font-weight: 550;
+  font-family: inherit;
+  font-size: clamp(0.7rem, 1.3vw, 1.2rem);
   border: none;
   border-radius: 0.5rem;
   box-shadow: var(--box-shadow-effect);
 
   cursor: pointer;
 
-  padding: clamp(0.6rem, 0.9vw, 1.2rem) clamp(1rem, 1.6vw, 1.4rem);
+  padding: clamp(0.6rem, 0.9vw, 1.2rem) clamp(1rem, 2.8vw, 2.0rem);
 }
 
 section.submission button:hover,
@@ -205,7 +205,8 @@ section.submission button:focus {
 }
 
 section.submission p {
-  font-size: clamp(0.8rem, 1.1vw, 1rem);
+  font-family: inherit;
+  font-size: clamp(0.7rem, 1.3vw, 1.2rem);
 
   margin-top: 3vh;
 }
