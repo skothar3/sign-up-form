@@ -26,7 +26,7 @@
   --main-width: max(50vw, 350px);
   --content-width: calc(var(--background-width) + var(--main-width));
 
-  --page-height: max(100vh, 600px);
+  --page-height: max(100vh, 700px);
   --header-height: max(30%, calc(0.3 * var(--page-height)));
   --submission-height: max(32%, calc(0.32 * var(--page-height)));
   --form-height: calc(100% - var(--header-height) - var(--submission-height));
@@ -101,7 +101,7 @@ main {
 }
 
 main header {
-  font-size: clamp(0.7rem, 1.6vw, 2rem);
+  font-size: clamp(1.1rem, 1.6vw, 1.8rem);
   font-weight: 680;
 
   height: var(--header-height);
@@ -120,7 +120,7 @@ section.sign-up {
 }
 
 section.sign-up > p {
-  font-size: clamp(0.9rem, 1.6vw, 2rem);
+  font-size: clamp(1rem, 1.6vw, 2rem);
   font-weight: bold;
   margin-bottom: 1vh;
 }
@@ -150,7 +150,7 @@ section.sign-up form label {
   display: block;
 
   font-family: inherit;
-  font-size: clamp(0.7rem, 1.1vw, 1rem);
+  font-size: clamp(0.8rem, 1.1vw, 1.1rem);
   color: inherit;
   letter-spacing: 0.05rem;
 }
@@ -181,7 +181,7 @@ section.sign-up form input:hover {
 section.sign-up form span.error {
   display: block;
   font-family: inherit;
-  font-size: clamp(0.4rem, 0.9vw, 0.7rem);
+  font-size: clamp(0.6rem, 0.9vw, 0.9rem);
   color: var(--error-color);
   letter-spacing: 0.05rem;
 }
