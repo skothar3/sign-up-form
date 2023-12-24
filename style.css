@@ -28,7 +28,7 @@
 
   --page-height: max(100vh, 600px);
   --header-height: max(30%, calc(0.3 * var(--page-height)));
-  --submission-height: max(35%, calc(0.35 * var(--page-height)));
+  --submission-height: max(32%, calc(0.32 * var(--page-height)));
   --form-height: calc(100% - var(--header-height) - var(--submission-height));
 
   --backdrop-color: #029ccf;
@@ -116,12 +116,13 @@ section.sign-up {
 
   height: var(--form-height);
   width: 100%;
-  padding: 1vh var(--main-padding-right) 3vh var(--main-padding-left);
+  padding: 1vh var(--main-padding-right) 5vh var(--main-padding-left);
 }
 
 section.sign-up > p {
   font-size: clamp(0.9rem, 1.6vw, 2rem);
   font-weight: bold;
+  margin-bottom: 1vh;
 }
 
 section.sign-up form {
@@ -132,14 +133,15 @@ section.sign-up form {
 
 section.sign-up div.form-row-container {
   display: flex;
-  gap: 5%;
+  gap: 10%;
 
   padding: 1.2vh 0vh;
 }
 
 section.sign-up p.form-element-container {
-  flex-grow: 1;
+  flex-grow: 0;
 
+  width: 40%;
   margin-top: 0vh;
   margin-bottom: 0vh;
 }
@@ -151,8 +153,6 @@ section.sign-up form label {
   font-size: clamp(0.7rem, 1.1vw, 1rem);
   color: inherit;
   letter-spacing: 0.05rem;
-
-  width: 80%;
 }
 
 section.sign-up form input {
@@ -160,7 +160,7 @@ section.sign-up form input {
   border-radius: 2px;
   outline: none;
 
-  width: 80%;
+  width: 100%;
 }
 
 section.sign-up form input:invalid {
@@ -176,6 +176,18 @@ section.sign-up form input:focus {
 
 section.sign-up form input:hover {
   border: 0.08rem solid var(--hover-color);
+}
+
+section.sign-up form span.error {
+  display: block;
+  font-family: inherit;
+  font-size: clamp(0.4rem, 0.9vw, 0.7rem);
+  color: var(--error-color);
+  letter-spacing: 0.05rem;
+}
+
+section.sign-up form span.active {
+  padding: 0.5rem;
 }
 
 section.submission {

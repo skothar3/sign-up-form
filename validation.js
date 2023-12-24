@@ -23,9 +23,7 @@ function handleValidation(input, index) {
 // Add an additional event listener to the first password input, which updates the second (password-confirm) password input's pattern attribute to be whatever was inputted (if the first password is valid, this will display an error under password-confirm unless it matches exacty what the first password is)
 password.addEventListener("input", (event) => {
   passwordConfirm.pattern = password.value;
-  if (password.validity.valid) {
-    handleValidation(passwordConfirm, 4);
-  }
+  handleValidation(passwordConfirm, 4);
 });
 
 // Loop over inputs array and add 'input' event listeners that pass to handleValidation for each input
