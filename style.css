@@ -106,7 +106,7 @@ main header {
 
   height: var(--header-height);
   width: 100%;
-  padding: 5vh var(--main-padding-right) 0vh var(--main-padding-left);
+  padding: 2vh var(--main-padding-right) 2vh var(--main-padding-left);
 }
 
 section.sign-up {
